@@ -46,8 +46,8 @@ list_of_files = [
 
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
-    filedir, filename = os.path.split(filepath)
+    filepath = Path(filepath) # ex - src\__init__.py or src\components\__init__.py
+    filedir, filename = os.path.split(filepath) # ex - ('src', '__init__.py') or ('src\\components', '__init__.py') split path and file 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
