@@ -29,6 +29,8 @@ def configure_logger():
 
     # File handler with rotation
     file_handler = RotatingFileHandler(log_file_path, maxBytes=MAX_LOG_SIZE, backupCount=BACKUP_COUNT)
+    # maxBytes - size of the file is supposed to be
+    # backupCount - Deletes oldest logs when backupCount is reached
     file_handler.setFormatter(formatter)
     file_handler.setLevel(logging.DEBUG)
     
