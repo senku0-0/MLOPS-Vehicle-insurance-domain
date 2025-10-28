@@ -42,6 +42,8 @@ list_of_files = [
     "pyproject.toml",
     "config/model.yaml",
     "config/schema.yaml",
+    "notebook/exp-notebook.ipynb",
+    "notebook/DB-notebook.ipynb",
 ]
 
 
