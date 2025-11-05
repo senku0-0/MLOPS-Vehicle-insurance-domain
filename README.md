@@ -41,8 +41,6 @@ Key learnings and features (what this repo shows)
 Repository layout (example)
 - src/ or app/ — core package source code (models, data, pipeline, utils, api)
 - notebooks/ — exploratory analysis or notes (if present)
-- tests/ — unit and integration tests
-- scripts/ — convenience scripts to run training, evaluation, packaging, or deployment
 - requirements.txt / pyproject.toml / setup.cfg — dependency and packaging definitions
 - .env.example — example environment variables (DO NOT commit secrets)
 - README.md — this file
